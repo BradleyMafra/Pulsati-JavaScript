@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Shantell+Sans:ital,wght@1,300;1,400;1,500;1,600&family=Tilt+Prism&display=swap');
+
+
+/* ==== COMO USAR AS FONTES ==== */
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Shantell Sans', cursive;
+font-family: 'Tilt Prism', cursive; 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerFundo{
+    height: 20vh;
+    background-color: rgb(102, 102, 102);
+}
+
+.headerFundo p{
+    display: flex;
+    color: rgb(124, 255, 255);
+    font-family: 'Tilt Prism', cursive;
+    font-size: 50px;
+    justify-content: center;
+}
+
+.headerPrincipal{
+    display: flex;
+    color: rgb(255, 0, 0);
+    justify-content: space-between;
+}
+
+.headerPrincipal p{
+    display: flex;
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 3vh 0 0 1vw;
+    justify-content: start;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.headerEsquerda{
+    width: 30vw;
+    height: 20vh;
+    display: flex;
+    margin-top: 4vh;
+    margin-left: 2vw;
+    background-color: rgb(115, 115, 115);
+}
+
+.deposit-money{
+    width: 2vw;
+    height: 5vh;
+    margin-top: 2.5vh;
+    margin-left: 1vw;
+}
+
+.headerCentro{
+    width: 30vw;
+    height: 20vh;
+    display: flex;
+    margin-top: 4vh;
+    background-color: rgb(115, 115, 115);
+}
+
+.withdraw-money{
+    width: 2vw;
+    height: 5vh;
+    margin-top: 4vh;
+    margin-left: 1vw;
+}
+
+.headerDireita{
+    width: 30vw;
+    height: 20vh;
+    margin-top: 4vh;
+    margin-right: 2vw;
+    background-color: rgb(115, 115, 115);
+}
+
