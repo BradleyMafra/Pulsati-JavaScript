@@ -98,7 +98,7 @@ body{
 
 .new-transition button{
     border: none;
-    cursor: pointer;
+    cursor: none;
     font-weight: 600;
     margin-bottom: 4vh;
     background: transparent;
@@ -186,6 +186,7 @@ body{
     width: 10vw;
     border: none;
     margin-top: 8vh;
+    cursor: none;
     border-radius: 50px;
     background-color: rgb(62, 174, 50);
 }
@@ -196,15 +197,16 @@ body{
 
 .close-btn {
     float: right;
-    font-size: 28px;
+    font-size: 40px;
     color: #ff0000;
     font-weight: bold;
 }
 
 .close-btn:hover,
 .close-btn:focus {
-  color: #ec0000;
-  cursor: pointer;
+    cursor: none;
+    color: #ec0000;
+    transition: 10s;
   text-decoration: none;
 }
 
