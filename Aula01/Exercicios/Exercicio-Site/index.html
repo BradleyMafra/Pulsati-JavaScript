@@ -1,44 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Shantell+Sans:ital,wght@1,300;1,400;1,500;1,600&family=Tilt+Prism&display=swap" rel="stylesheet">
-    <title> Lórien Finances </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Shantell+Sans:ital,wght@1,300;1,400;1,500;1,600&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lórien Finances</title>
+  </head>
+  <body>
     <header>
-        <div class="headerFundo">
-            <div class="logo">
-                <p> Lórien Finances</p>
-            </div>
-            <div class="headerPrincipal">
-                <div class="headerEsquerda">
-                    <p> Entradas </p>
-                    <img class="deposit-money" src="./assets/deposit-money.png" alt="">
-                </div>
-                <div class="headerCentro">
-                    <p> Saídas </p>
-                    <img class="withdraw-money" src="./assets/money.png" alt="">
-                </div>
-                <div class="headerDireita">
-                    <p> Total </p>
-                </div>
-            </div>
+      <div class="headerFundo">
+        <div class="logo">
+          <p>Lórien Finances</p>
         </div>
+        <div class="headerPrincipal">
+          <div class="headerEsquerda">
+            <p>Entradas</p>
+            <img
+              class="deposit-money"
+              src="./assets/deposit-money.png"
+              alt=""
+            />
+          </div>
+          <div class="headerCentro">
+            <p>Saídas</p>
+            <img class="withdraw-money" src="./assets/money.png" alt="" />
+          </div>
+          <div class="headerDireita">
+            <p>Total</p>
+          </div>
+        </div>
+      </div>
     </header>
 
     <section>
+        <div class="modal">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h2>Escolha o que deseja fazer</h2>
+              <form>
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" required>
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" required>
+                <label for="data">Data:</label>
+                <input type="date" id="data" required>
+            </form>
+            <div class="btnEsp">
+                <button type="button" class="add-btn">Depositar</button>
+                <button type="button" class="add-btn">Sacar</button>
+            </div>
+            </div>
+          </div>  
 
+      <div class="new-transition">
+        <button>+ Nova transação</button>
+      </div>
+      <div class="centroPagina">
+        <div class="sectionTr-Vl-Dt">
+          <p>Descrição</p>
+          <p>Valor</p>
+          <p>Data</p>
+        </div>
+        <div class="section-valores-1">
+          <p>123456789</p>
+          <p>150,00</p>
+          <p>03/03/2023</p>
+        </div>
+        <div class="section-valores-1">
+          <p>987654321</p>
+          <p>1.050,00</p>
+          <p>03/05/2022</p>
+        </div>
+        <div class="section-valores-2">
+          <p>357159654</p>
+          <p>- 150,00</p>
+          <p>02/03/2023</p>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <!-- <p> ©Lórien Finances </p> -->
+      <!-- <p> ©Lórien Finances </p> -->
     </footer>
-</body>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>

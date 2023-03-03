@@ -15,29 +15,35 @@ font-family: 'Tilt Prism', cursive;
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(112, 112, 112);
+}
+
+/* ==== HEADER PAGINA ==== */
+
 .headerFundo{
-    height: 20vh;
-    background-color: rgb(102, 102, 102);
+    height: 24vh;
+    background-color: rgb(82, 82, 82);
 }
 
 .headerFundo p{
     display: flex;
-    color: rgb(124, 255, 255);
+    color: rgba(0, 0, 0, 0.194);
     font-family: 'Tilt Prism', cursive;
     font-size: 50px;
+    font-weight:600;
     justify-content: center;
 }
 
 .headerPrincipal{
     display: flex;
-    color: rgb(255, 0, 0);
     justify-content: space-between;
 }
 
 .headerPrincipal p{
     display: flex;
     font-size: 20px;
-    color: whitesmoke;
+    color: rgba(0, 0, 0, 0.713);
     padding: 3vh 0 0 1vw;
     justify-content: start;
     font-family: 'Shantell Sans', cursive;
@@ -49,7 +55,7 @@ font-family: 'Tilt Prism', cursive;
     display: flex;
     margin-top: 4vh;
     margin-left: 2vw;
-    background-color: rgb(115, 115, 115);
+    background-color: rgb(69, 112, 106);
 }
 
 .deposit-money{
@@ -64,13 +70,13 @@ font-family: 'Tilt Prism', cursive;
     height: 20vh;
     display: flex;
     margin-top: 4vh;
-    background-color: rgb(115, 115, 115);
+    background-color: rgb(69, 112, 106);
 }
 
 .withdraw-money{
     width: 2vw;
     height: 5vh;
-    margin-top: 4vh;
+    margin-top: 3vh;
     margin-left: 1vw;
 }
 
@@ -79,6 +85,132 @@ font-family: 'Tilt Prism', cursive;
     height: 20vh;
     margin-top: 4vh;
     margin-right: 2vw;
-    background-color: rgb(115, 115, 115);
+    background-color: rgb(98, 142, 114);
 }
 
+/* ==== CENTRO DA PAGINA ==== */
+
+.new-transition{
+    display: flex;
+    justify-content: start;
+    margin: 20vh 20vw 0vh 20vw;
+}
+
+.new-transition button{
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 4vh;
+    background: transparent;
+    color: rgb(118, 47, 117);
+}
+
+.sectionTr-Vl-Dt{
+    height: 8vh;
+    width: 60vw;
+    display: flex;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: rgb(79, 134, 134);
+    margin: 2vh 20vw 0vh 20vw;
+    justify-content: space-between;
+}
+
+.sectionTr-Vl-Dt p {
+    padding: 2.5vh;
+}
+
+.section-valores-1{
+    height: 8vh;
+    width: 60vw;
+    display: flex;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: rgb(79, 134, 134);
+    margin: 2vh 20vw 0vh 20vw;
+    justify-content: space-between;
+}
+
+.section-valores-1 p {
+    padding: 2.5vh;
+}
+
+.section-valores-2{
+    height: 8vh;
+    width: 60vw;
+    display: flex;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: rgb(79, 134, 134);
+    margin: 2vh 20vw 0vh 20vw;
+    justify-content: space-between;
+}
+
+.section-valores-2 p:nth-child(2){
+    color: rgb(185, 4, 4);    
+}
+
+.section-valores-2 p {
+    padding: 2.5vh;
+}
+
+
+/* Menu New Transition */
+
+.modal {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: auto;
+    position: fixed;
+    background-color: rgba(43, 19, 19, 0.556);
+}
+
+.modal-content {
+    width: 50%;
+    height: 28vh;
+    padding: 10px;
+    margin: 0vh 0vw 0vh 25vw;
+    border: 2px solid #613131;
+    background-color: rgb(101, 101, 101);
+}
+
+.btnEsp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnEsp button{
+    height: 4vh;
+    width: 10vw;
+    border: none;
+    margin-top: 8vh;
+    border-radius: 50px;
+    background-color: rgb(62, 174, 50);
+}
+
+.btnEsp button:nth-child(2){
+    background-color: rgb(186, 31, 31);
+}
+
+.close-btn {
+    float: right;
+    font-size: 28px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #ec0000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+form {
+    display: flex;
+    font-weight: 600;
+    margin: 3vh 0vw 0vh 0vw;
+    justify-content: space-between;
+}
