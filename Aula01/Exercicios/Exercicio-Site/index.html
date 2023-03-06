@@ -24,7 +24,7 @@
           <div class="headerEsquerda">
             <p>Entradas</p>
             <img class="deposit-money" src="./assets/deposit-money.png"/>
-              <b>1.200,00</b>
+              <b id="entrada">0</b>
           </div>
           <div class="headerCentro">
             <p>Saídas</p>
@@ -52,8 +52,8 @@
                 <input type="date" id="data" required>
             </form>
             <div class="btnEsp">
-                <button id="depositar" type="button" class="add-btn">Depositar</button>
-                <button id="sacar" type="button" class="add-btn">Sacar</button>
+                <button onclick="addTransacao()" id="depositar" type="button" class="add-btn">Depositar</button>
+                <button onclick="removeTransacao()" id="sacar" type="button" class="add-btn">Sacar</button>
             </div>
             </div>
           </div>  
@@ -61,32 +61,25 @@
       <div class="new-transition">
         <button>+ Nova transação</button>
       </div>
-      <div class="centroPagina">
-        <div class="sectionTr-Vl-Dt">
-          <p>Descrição</p>
-          <p>Valor</p>
-          <p>Data</p>
-        </div>
-        <div class="section-valores-1">
-          <p>123456789</p>
-          <p>150,00</p>
-          <p>03/03/2023</p>
-        </div>
-        <div class="section-valores-1">
-          <p>987654321</p>
-          <p>1.050,00</p>
-          <p>03/05/2022</p>
-        </div>
-        <div class="section-valores-2">
-          <p>357159654</p>
-          <p>- 150,00</p>
-          <p>02/03/2023</p>
-        </div>
+      <div class="infoCentral">
+        <ul id="descricao1">
+          Descrição
+        </ul>
+
+        <ul id="valor1">
+          Valor
+        </ul>
+        
+        <ul id="data1">
+          Data  
+        </ul>
       </div>
     </section>
 
     <footer>
-      <p> ©Lórien Finances </p>
+      <div class="marcaRegistrada">
+        <p> ©Lórien Finances </p>
+      </div>
     </footer>
 
     <!-- JavaScript -->
