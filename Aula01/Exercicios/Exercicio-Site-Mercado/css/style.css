@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerFundo{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(247, 214, 2, 0.467);
+}
+
+.headerCentro p{
+    margin: 2vw;
+    width: 12vw;
+    height: 4vh;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerCentro p:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.467);
+}
+
+.headerDireita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerDireita button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.headerDireita img{
+    height: 4vh;
+}
+
+.headerDireita button:hover{
+    width: 3vw;
+    height: 6vh;
+    border:1px solid transparent;
+}
+
+.headerDireita p{
+    width: 8vw;
+    height: 4vh;
+    margin: 2vw;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerDireita p:nth-child(2){
+    width: 14vw;
+}
+
+.headerDireita p:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.467);
+}
